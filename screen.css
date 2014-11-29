@@ -1,0 +1,47 @@
+body {
+    background-color: #fffff0;
+    margin: 0;
+}
+
+.left-side {
+    float: left;
+    width: 40%;
+}
+
+.ship {
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.circle {
+    margin-top: 400px;
+    margin-left: 80px;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    border-radius: 100%;
+    border: 20px solid purple;
+    background-color: #fffff0;
+}
+
+.circle img { margin-top: 60px; }
+
+.right-side {
+    float: right;
+    width: 60%; 
+}
+
+#hiddenImage {
+    background-image: url(arre.jpg);
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 5000ms;
+}
+
+#hiddenImage.hidden {
+    transform: scale(0);
+}
